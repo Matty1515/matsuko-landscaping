@@ -1,0 +1,24 @@
+{
+  "name": "matsuko-landscaping",
+  "version": "1.0.0",
+  "description": "Landing page for Matsuko Landscaping",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matty1515/matsuko-landscaping.git"
+  },
+  "author": "Matty1515",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matty1515/matsuko-landscaping/issues"
+  },
+  "homepage": "https://github.com/Matty1515/matsuko-landscaping#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
