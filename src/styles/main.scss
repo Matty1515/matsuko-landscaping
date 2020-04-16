@@ -255,7 +255,7 @@ The way you stop stuff getting rekt by blend mode is to put your content in a di
     display: none;
   }
   .intro-left {
-    background-image: url("https://images.unsplash.com/photo-1532920161727-344adb090f7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80");
+    background-image: url("../img/bamboo-forest.jpg");
     background-position: center;
     background-size: auto 100%;
   }
@@ -426,7 +426,7 @@ The way you stop stuff getting rekt by blend mode is to put your content in a di
   height: 100vh;
   width: 100%;
   box-sizing: border-box;
-  background-image: url("https://images.unsplash.com/photo-1492114011589-509c6e695d8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-image: url("../img/plant-bulb.jpg");
   /* https://unsplash.com/photos/1n8zqoqFUGc */
   background-position: center;
   background-size: auto 100%;
@@ -549,7 +549,7 @@ The way you stop stuff getting rekt by blend mode is to put your content in a di
   grid-row-gap: 0px;
 }
 .aboutus-left {
-  background-image: url("https://images.unsplash.com/photo-1495767771383-e68aa78249f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80");
+  background-image: url("../img/peace-gardening.jpg");
   /* https://unsplash.com/photos/5FsE88h3Wak */
   background-position: center;
   background-size: 100% auto;
@@ -670,7 +670,7 @@ The way you stop stuff getting rekt by blend mode is to put your content in a di
 }
 .enquire-right {
   grid-area: right;
-  background-image: url("https://images.unsplash.com/photo-1577090059631-a9219fd9e712?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1782&q=80");
+  background-image: url("../img/green-phone.jpg");
   /* https://unsplash.com/photos/IRufoFNJacA */
   background-position: center;
   background-size: 100% auto;
