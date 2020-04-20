@@ -19,12 +19,8 @@
 
 <!-- 
 	=== To Do List ===
-	-Add some basic GSAP animtations - e.g. images zoom in on scroll
-	-Minimise frog video file size without losing quality - check to make sure that ParcelJS isn't already doing that
-	-Make the nav buttons actually work
-	-Swap the bamboo image for something more relevent
-	-'Enqiure Now' buttons should have some email functionality e.g. open up the email client
-	-Facebook and Instagram buttons should link to their respective sites
+	***Add some basic GSAP animtations - e.g. images zoom in on scroll
+	***Minimise frog video file size without losing quality and set image as placeholder
 -->
 
 <section class="splash">
@@ -39,10 +35,10 @@
     <p class="txt-main">MATSUKO</p>
   </div>
   <div class="nav">
-    <p class="txt-accent">FAQ</p>
-    <p class="txt-accent">About</p> 
-    <p class="txt-accent">Contact</p>
-    <button>Enquire Now</button>
+    <a href="#FaqLink"><p class="txt-accent">FAQ</p></a>
+    <a href="#AboutLink"><p class="txt-accent">About</p> </a>
+    <a href="#ContactLink"><p class="txt-accent">Contact</p></a>
+    <a href="mailto:hello@matsuko-landscaping-netlify.app?Subject=Services%20Enquiry" target="_top"><button>Enquire Now</button></a>
   </div>
   <div class="main">
     <h1 class="head-accent">enquire about</h1>
@@ -52,14 +48,14 @@
       Landscaping
     </h1>
     <p class="txt-main">Removal of earth from the land is called cutting while when earth is added to the slope, it is called filling. Sometimes the grading process may involve removal of excessive waste (landfills), soil and rocks.</p>
-    <button>Enquire Now</button>
+    <a href="mailto:hello@matsuko-landscaping-netlify.app?Subject=Services%20Enquiry" target="_top"><button>Enquire Now</button></a>
   </div>
 </div>
 
 <section class="intro">
   <div class="intro-left">
     <!-- https://unsplash.com/photos/BofgeVFG-_w -->
-    <img src="img/bamboo-forest.jpg" alt="bamboo">
+    <img src="img/watering-plants.jpg" alt="bamboo">
   </div>
   <div class="intro-right">
     <div class="intro-text">
@@ -102,7 +98,7 @@
 
 <section class="jumbotron"></section>
 
-<section class="faq">
+<section id="FaqLink" class="faq">
   <div class="faq-top">
     <p class="txt-accent">All of our designs take into consideration sustainability and mental wellbeing.</p>
   </div>
@@ -136,7 +132,7 @@
   </div>
 </section>
 
-<section class="aboutus">
+<section id="AboutLink" class="aboutus">
   <div class="aboutus-left"></div>
   <div class="aboutus-facts">
     <p class="txt-accent">Founded in 2017</p>
@@ -152,11 +148,11 @@
   </div>
 </section>
 
-<section class="enquire">
+<section id="ContactLink" class="enquire">
   <div class="enquire-left">
     <h1 class="head-accent">Contact</h1>
     <h1 class="head-main">Enquire About Our Services</h1>
-    <button>Send Us An Email</button>
+    <a href="mailto:hello@matsuko-landscaping-netlify.app?Subject=Services%20Enquiry" target="_top"><button>Send Us An Email</button></a>
     <p class="txt-main">We endevuor to respond as quickly as we can to all enquiries</p>
   </div>
   <div class="enquire-right"></div>
@@ -173,8 +169,8 @@
     </div>
     <div class="footer-social">
       <p class="txt-main">Socials</p>
-      <p class="txt-small"><span><i class="lab la-facebook"></i></span> Facebook</p>
-      <p class="txt-small"><span><i class="lab la-instagram"></i></span> Instagram</p>
+      <a href="https://www.facebook.com/" target="_blank"><p class="txt-small"><span><i class="lab la-facebook"></i></span> Facebook</p></a>
+      <a href="https://www.instagram.com/" target="_blank"><p class="txt-small"><span><i class="lab la-instagram"></i></span> Instagram</p></a>
     </div>
     <div class="footer-phone">
       <p class="txt-main">Phone</p>

@@ -11,7 +11,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font: inherit;
 	vertical-align: baseline;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #fdfbf1;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239d8e6f' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
@@ -145,6 +147,9 @@ The way you stop stuff getting rekt by blend mode is to put your content in a di
   color: $colour-light;
   cursor: pointer;
 }
+.nav a {
+  text-decoration: none;
+}
 .nav button {
   margin-left: 4vw;
   padding: 15px;
@@ -179,13 +184,19 @@ The way you stop stuff getting rekt by blend mode is to put your content in a di
   width: 180px;
   margin-top: 20px;
 }
-@media screen and (max-width: 1000px) {
+// the media query for this should be at the 1300px mark - change it once the video has been minimised enough to load properly
+@media screen and (max-width: 3000px) {
   .splash video {
     display: none;
   }
   .splash {
     background-image: url("../img/green-toad-backup.jpg");
     background-position: center left;
+    background-size: 100% auto;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .splash {
     background-size: auto 100%;
   }
 }
@@ -295,7 +306,7 @@ The way you stop stuff getting rekt by blend mode is to put your content in a di
     display: none;
   }
   .intro-left {
-    background-image: url("../img/bamboo-forest.jpg");
+    background-image: url("../img/watering-plants.jpg");
     background-position: center;
     background-size: auto 100%;
   }
@@ -727,6 +738,12 @@ The way you stop stuff getting rekt by blend mode is to put your content in a di
   justify-content: space-around;
   padding-top: 10px;
   border-top: 1px solid $colour-mid;
+}
+.footer-social a {
+  text-decoration: none;
+}
+.footer-social .txt-small:hover {
+  text-decoration: underline;
 }
 @media screen and (max-width: 688px) {
   .enquire .head-main {
