@@ -143,12 +143,13 @@ The way you stop stuff getting rekt by blend mode is to put your content in a di
 .nav p {
   margin-left: 5vw;
 }
-.nav p:hover {
+.nav a {
+  color: $colour-mid;
+  text-decoration: none;
+}
+.nav a:hover {
   color: $colour-light;
   cursor: pointer;
-}
-.nav a {
-  text-decoration: none;
 }
 .nav button {
   margin-left: 4vw;
@@ -179,10 +180,14 @@ The way you stop stuff getting rekt by blend mode is to put your content in a di
   margin-top: 30px;
   max-width: 400px;
 }
+.main a {
+  background-color: red;
+  margin-top: 20px;
+  width: 180px;
+}
 .main button {
   padding: 20px;
   width: 180px;
-  margin-top: 20px;
 }
 @media screen and (max-width: 1300px) {
   .splash video {
@@ -583,7 +588,7 @@ The way you stop stuff getting rekt by blend mode is to put your content in a di
   > * {
     outline: $outline;
   }
-  min-height: 100vh;
+  min-height: 720px;
   width: 100%;
   box-sizing: border-box;
   padding: 20px 20px 20px 0px;
@@ -629,7 +634,7 @@ The way you stop stuff getting rekt by blend mode is to put your content in a di
   margin-bottom: 40px;
 }
 .aboutus-right p {
-  margin: 10px 0px;
+  margin: 20px 0px;
 }
 @media screen and (max-width: 1350px) {
   .aboutus-left {
@@ -666,7 +671,7 @@ The way you stop stuff getting rekt by blend mode is to put your content in a di
   min-height: 100vh;
   width: 100%;
   box-sizing: border-box;
-  padding: 20px 20px 20px 20px;
+  padding: 60px 20px 20px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
@@ -696,9 +701,9 @@ The way you stop stuff getting rekt by blend mode is to put your content in a di
   font-size: 80px;
   text-align: center;
   max-width: 500px;
+  margin-bottom: 35px;
 }
 .enquire-left button {
-  margin: 35px 0px;
   background-color: $colour-dark;
   border: 0;
   padding: 25px;
@@ -707,11 +712,12 @@ The way you stop stuff getting rekt by blend mode is to put your content in a di
   text-transform: uppercase;
 }
 .enquire-left button:hover {
-  background-color: black;
+  background-color: $colour-mid;
   cursor: pointer;
 }
 .enquire-left p {
   max-width: 300px;
+  margin-top: 35px;
 }
 .enquire-right {
   grid-area: right;

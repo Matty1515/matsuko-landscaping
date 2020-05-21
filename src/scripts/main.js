@@ -6,8 +6,6 @@ window.addEventListener('load', function () {
 const Controller = new ScrollMagic.Controller();
 const IntroTl = new TimelineMax({});
 const ProbioticsTl = new TimelineMax({});
-const JumbotronTopTl = new TimelineMax({});
-const JumbotronBottTl = new TimelineMax({});
 const FaqTl = new TimelineMax({});
 const AboutUsTl = new TimelineMax({});
 const EnquireTl = new TimelineMax({});
@@ -48,32 +46,21 @@ const ProbioticsScene = new ScrollMagic.Scene({
 }).setTween(ProbioticsTl).addTo(Controller);
 
 
-// === Jumbotron Top Animation ===
-JumbotronTopTl
-.from('.probiotics-bottom p', 1, {
-	y: 20,
-	opacity: 0
-});
-
-const JumbotronTopScene = new ScrollMagic.Scene({
-	triggerElement: ".jumbotop-trigger"
-}).setTween(JumbotronTopTl).addTo(Controller);
-
-
-// === Jumbotron Bottom Animation ===
-JumbotronBottTl
-.from('.faq-top p', 1, {
-	y: -20,
-	opacity: 0
-});
-
-const JumbotronBottScene = new ScrollMagic.Scene({
-	triggerElement: ".faq-top"
-}).setTween(JumbotronBottTl).addTo(Controller);
-
-
 // === Faq Animation ===
+FaqTl
+.staggerFrom('.faq-title h1', 1, {
+	opacity: 0,
+	y: 20,
+	stagger: 0.2
+})
+.from('.faq-qa .txt-small', 1, {
+	opacity: 0,
+	y: -20
+}, '-=0.5');
 
+const FaqScene = new ScrollMagic.Scene({
+	triggerElement: ".faq"
+}).setTween(FaqTl).addTo(Controller);
 
 
 // === About Us Animation ===
